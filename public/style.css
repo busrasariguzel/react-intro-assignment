@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 100px 200px 100px;
+    grid-template-areas:
+    'hd hd hd hd'
+    'sb bd bd bd'
+    'sb bd bd bd'
+    'ft ft ft ft';
+    grid-gap: 10px;
+    background-color: lightsalmon;
+    padding: 10px;
+  }
+
+.header {
+    grid-area: hd;
+}
+
+.side {
+    grid-area: sb;
+}
+.footer{
+    grid-area: ft
+}
+
+.body {
+    grid-area: bd;
+}
+
+.square{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    
+}
